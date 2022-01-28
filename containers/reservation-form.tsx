@@ -22,19 +22,25 @@ const ReservationForm = (props: ReservationFormProps) => (
 		</div>
 		<div className="row mb-3">
 			<label htmlFor="inputService" className="col-sm-2 col-form-label">
-				Service
+				Service:
 			</label>
 			<div className="col-sm-10">
-				<select className="form-select" aria-label="Default select example" id="inputService">
-					<option selected>Open this select menu</option>
-					<option value="1"></option>
-					<option value="2">Two</option>
-					<option value="3">Three</option>
+				<select
+					className="form-select"
+					aria-label="Please select the service"
+					id="inputService"
+					defaultValue={'default'}
+				>
+					<option value={'default'} disabled>
+						Please select the service
+					</option>
+					<option value="1">Pair massage (2)</option>
+					<option value="2">Haircut (1)</option>
 				</select>
 			</div>
 		</div>
 		<fieldset className="row mb-3">
-			<legend className="col-form-label col-sm-2 pt-0">Customers</legend>
+			<legend className="col-form-label col-sm-2 pt-0">Customers:</legend>
 			<div className="col-sm-10">
 				<p className="d-flex align-items-center">
 					Albus Dumbledore
@@ -65,7 +71,7 @@ const ReservationForm = (props: ReservationFormProps) => (
 			</div>
 		</fieldset>
 		<button type="submit" className="btn btn-primary offset-sm-2">
-			Add reservation
+			Create reservation
 		</button>
 	</form>
 );

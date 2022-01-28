@@ -23,8 +23,8 @@ const Home: NextPage = () => {
 			</Head>
 
 			<main className={styles.main}>
-				<h1>Feelo - new customer reservation</h1>
 				<div className="container">
+					<h1 className={'mt-2 mb-5'}>Feelo - new customer reservation</h1>
 					<ReservationForm />
 				</div>
 			</main>
