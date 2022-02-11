@@ -7,6 +7,7 @@
 		"start": "next start",
 		"lint": "next lint",
 		"check:format": "prettier --check \"./**/*.(js|ts|tsx|json)\"",
+		"check:lint": "eslint .",
 		"check": "yarn run check:format",
 		"fix:format": "prettier --write \"./**/*.(js|ts|tsx|json)\""
 	},
@@ -20,6 +21,7 @@
 		"@types/react": "17.0.38",
 		"eslint": "8.6.0",
 		"eslint-config-next": "12.0.8",
+		"eslint-plugin-react-hooks": "^4.3.0",
 		"prettier": "2.5.1",
 		"typescript": "4.5.4"
 	}
