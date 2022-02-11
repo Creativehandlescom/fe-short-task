@@ -19,7 +19,7 @@ const services = [
 		capacity: 1,
 	},
 	{
-		id: 'u2a',
+		id: 'mm7',
 		name: 'Bird watching',
 		capacity: 0,
 	},
@@ -29,7 +29,7 @@ const services = [
 		capacity: 4,
 	},
 	{
-		id: 'a3x',
+		id: 'd23',
 		name: 'Haircut',
 		capacity: 1,
 	},
