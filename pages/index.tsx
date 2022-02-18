@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import ReservationForm from '../containers/reservation-form';
+import FlashMessageProvider from '../containers/flash-message-provider';
+import FlashMessage from '../containers/flash-message';
 
 const Home: NextPage = () => {
 	return (
@@ -25,7 +27,10 @@ const Home: NextPage = () => {
 			<main className={styles.main}>
 				<div className="container">
 					<h1 className={'mt-2 mb-5'}>Feelo - new customer reservation</h1>
-					<ReservationForm />
+					<FlashMessageProvider>
+						<FlashMessage />
+						<ReservationForm />
+					</FlashMessageProvider>
 				</div>
 			</main>
 		</div>
