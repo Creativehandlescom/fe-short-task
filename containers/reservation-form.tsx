@@ -1,13 +1,5 @@
 import * as React from 'react';
 
-const onFinish = (values: any) => {
-	console.log('Success:', values);
-};
-
-const onFinishFailed = (errorInfo: any) => {
-	console.log('Failed:', errorInfo);
-};
-
 type ReservationFormProps = {};
 
 const ReservationForm = (props: ReservationFormProps) => (
@@ -61,9 +53,9 @@ const ReservationForm = (props: ReservationFormProps) => (
 							className="form-control"
 							placeholder="Customer's full name"
 							aria-label="Customer's full name"
-							aria-describedby="button-addon2"
+							aria-describedby="button-addon-customer"
 						/>
-						<button className="btn btn-primary" type="button" id="button-addon2">
+						<button className="btn btn-primary" type="button" id="button-addon-customer">
 							Add customer
 						</button>
 					</div>
