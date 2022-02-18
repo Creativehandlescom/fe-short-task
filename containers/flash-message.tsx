@@ -26,7 +26,7 @@ const FlashMessage = (props: FlashMessageProps) => {
 				clearTimeout(destroyTimeoutId);
 			}
 		};
-	}, [message, previousMessage]);
+	}, [message, previousMessage, setMessage]);
 
 	return message !== null ? (
 		<div className={`alert ${message.type === 'error' ? 'alert-danger' : 'alert-success'}`} role="alert">

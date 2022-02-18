@@ -65,7 +65,7 @@ const ReservationForm = () => {
 					</div>
 				</div>
 			</fieldset>
-			<button type="submit" className="btn btn-primary offset-sm-2">
+			<button type="submit" className="btn btn-primary offset-sm-2" disabled>
 				Create reservation
 			</button>
 		</form>

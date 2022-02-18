@@ -8,7 +8,8 @@
 		"lint": "next lint",
 		"check:format": "prettier --check \"./**/*.(js|ts|tsx|json)\"",
 		"check:lint": "eslint .",
-		"check": "yarn run check:format",
+		"check:types": "tsc --project ./tsconfig.json --noEmit",
+		"check": "yarn run check:format && yarn run check:lint && yarn run check:types",
 		"fix:format": "prettier --write \"./**/*.(js|ts|tsx|json)\""
 	},
 	"dependencies": {
