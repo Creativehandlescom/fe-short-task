@@ -29,7 +29,7 @@ export const services: ReadonlyArray<Service> = [
 	},
 	{
 		id: 'd23',
-		name: 'Haircut',
+		name: 'Haircut with beard trim',
 		capacity: 1,
 	},
 ];
