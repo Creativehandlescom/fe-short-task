@@ -1,4 +1,11 @@
-## Feelo - new customer reservation test task
+## Feelo - new customer reservation - test task
+
+### The process
+
+1. Clone this repository (please do not fork): `git clone https://github.com/Creativehandlescom/fe-short-task`
+2. Continue with installation and the task itself
+3. Once ready, create a repository on your (ideally GitHub) account and push all the changes
+4. Send us link to the repo
 
 ### Instalation
 
@@ -16,7 +23,7 @@ yarn run dev
 
 3. The application will be running at [http://localhost:3010](http://localhost:3010)
 
-### The task
+### Task
 
 This is a simple mock of a reservation form for our business partners on [Feelo](https://feelo.lk). As a owner of a hair
 saloon/restaurant/etc., customers will call you to make reservations. In this simplified form you just need to add a
@@ -26,7 +33,7 @@ contact phone, select the correct service and add the names for all customers (s
    of services:
    `[{ id: string, name: string, capacity: number }]`. Capacity is the exact number of customers required for this
    service. The label of select will be `service_name (service_capacity)` , so for example `Bowling (4)`.
-2. Allow adding customers to the form. You shouldn't be able to add more customers than current selected service
+2. Allow adding customers to the form. You shouldn't be able to add more customers than current selected service's
    capacity.
 3. Don't allow submitting the form when it's not valid. It's enough just to enable/disable submit button, no input error
    messages are required. Valid form means:
